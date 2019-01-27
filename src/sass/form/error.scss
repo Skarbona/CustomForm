@@ -1,0 +1,25 @@
+.form__fields .form__fields--error {
+  .form__fields-label {
+    color: $red;
+  }
+  .form__fields-input {
+    input, textarea, select {
+      border: 1px solid $red;
+    }
+  }
+  .form__fields__error {
+    background: $red;
+    padding: 0.5em 1em;
+    margin-top: 0.5em;
+    color: #eee;
+    font-size: 0.8em;
+    width:100%;
+    max-width:600px;
+    @media all and (min-width:1000px) {
+      flex-basis: 70%;
+      justify-self: flex-end;
+      margin-left: 30%;
+    }
+  }
+}
+

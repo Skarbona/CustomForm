@@ -1,0 +1,17 @@
+.app-header {
+  width: 100%;
+  background: $primary;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-top: 5px solid $secondary;
+  border-bottom: 2px solid $secondary;
+  font-weight: 300;
+  text-align:center;
+  letter-spacing: 0.1em;
+  font-size: 1.3em;
+  box-shadow: 0 3px 10px rgba(51,51,51,0.7);
+  @media all and (min-width:1000px)  {
+    text-align:left;
+  }
+}

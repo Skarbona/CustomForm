@@ -1,0 +1,38 @@
+.form__event {
+  .form__event__date-time {
+    display:flex;
+    flex-wrap:wrap;
+    @media all and (min-width: 1000px) {
+      .form__fields__date {
+        width: 35%;
+        display: inline-block;
+        .form__fields-input {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      .form__fields__time {
+        width: 53%;
+        display: inline-block;
+        margin-left:2%;
+        .form__fields-input {
+          display: flex;
+          justify-content:flex-start;
+          align-items: flex-start;
+          input[type=time] {
+            width:50%;
+          }
+          .form__fields {
+            width:50%;
+            margin:0;
+            height:50px;
+          }
+        }
+      }
+    }
+    .form__fields--error .form__fields__error {
+      max-width:200px;
+    }
+  }
+}

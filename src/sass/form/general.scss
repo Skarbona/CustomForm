@@ -1,0 +1,82 @@
+.form__event {
+  .form__fields {
+    margin: 2em 0;
+    width: 100%;
+    label {
+      display:flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      @media all and (min-width:1000px) {
+        flex-direction: row;
+      }
+    }
+  }
+  .form__fields-label {
+    margin-bottom: 0.5em;
+    text-align: left;
+    width:100%;
+    color: #878787;
+    @media all and (min-width:1000px) {
+      flex-basis: 30%;
+    }
+    .required {
+      color: $red;
+      margin-left:5px;
+    }
+  }
+  .form__fields-input {
+    input, select {
+      height: 50px;
+    }
+    input, textarea, select {
+      width: 100%;
+      max-width:600px;
+      padding: 1em;
+      border: 1px solid #eee;
+    }
+    .form__fields {
+      width: auto;
+    }
+
+
+    input[type=number] {
+      max-width:100px;
+    }
+
+    @media all and (min-width:1000px) {
+      flex-basis: 70%;
+    }
+  }
+  .form__fields__info {
+    background: #eee;
+    padding: 0.5em 1em;
+    margin-top: 0.5em;
+    color: #333;
+    font-size: 0.8em;
+    width:100%;
+    max-width:600px;
+    @media all and (min-width:1000px) {
+      flex-basis: 70%;
+      justify-self: flex-end;
+      margin-left: 30%;
+    }
+  }
+  .form__fields__radio {
+    .form__fields-input {
+      display:flex;
+      justify-content:flex-start;
+      align-items:center;
+      flex-wrap:wrap;
+      .form__fields-input__radio {
+        margin-right: 1em;
+        justify-content:center;
+        align-items:center;
+        display:flex;
+        input[type=radio] {
+          width: auto;
+        }
+      }
+    }
+
+  }
+}
