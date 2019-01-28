@@ -59,7 +59,6 @@ const AboutForm = ({ validationRequired, setOnBlur, setTargetValues }) => {
         relatedField={
           <NumberField
             name="fee"
-            min={1}
             after="$"
             showOn={{ field: "payments", value: true }}
             onChange={e =>
@@ -72,7 +71,6 @@ const AboutForm = ({ validationRequired, setOnBlur, setTargetValues }) => {
       <NumberField
         label="REWARD"
         after="Reward points for attendance"
-        min={0}
         onChange={e => setTargetValues(+e.target.value, "reward")}
         name="reward"
       />
